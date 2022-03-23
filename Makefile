@@ -13,6 +13,9 @@ run: demo
 demo: Demo.o $(OBJECTS)
 	$(CXX) $(CXXFLAGS) $^ -o demo
 
+main: main.o $(OBJECTS)
+	$(CXX) $(CXXFLAGS) $^ -o main
+
 test: TestCounter.o Test.o $(OBJECTS)
 	$(CXX) $(CXXFLAGS) $^ -o test
 
@@ -27,4 +30,4 @@ valgrind: demo test
 	$(CXX) $(CXXFLAGS) --compile $< -o $@
 
 clean:
-	rm -f *.o demo test
+	rm -f *.o demo main test
