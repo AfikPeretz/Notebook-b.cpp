@@ -10,10 +10,12 @@ using namespace std;
 
 namespace ariel {
     class Notebook { 
-        private :
+        private:
             typedef tuple<unsigned int, unsigned int, unsigned int> Location;
-            map < Location, char> notebook; 
+            map <Location, char> notebook; 
         public:
+            Notebook(unsigned int page, unsigned int column, unsigned int row);
+            ~Notebook();
             void write (unsigned int page, unsigned int column, unsigned int row, Direction direction, string text);
             string read (unsigned int page, unsigned int column, unsigned int row, Direction direction, unsigned int numOfChar);
             void erase (unsigned int page, unsigned int column, unsigned int row, Direction direction, unsigned int numOfChar);
