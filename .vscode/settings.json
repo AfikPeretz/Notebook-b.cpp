@@ -2,6 +2,8 @@
     "files.associations": {
         "tuple": "cpp",
         "string": "cpp",
-        "stdexcept": "cpp"
-    }
+        "stdexcept": "cpp",
+        "ostream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Enable"
 }

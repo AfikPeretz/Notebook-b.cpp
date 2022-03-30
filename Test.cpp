@@ -52,19 +52,4 @@ TEST_CASE("notebook checks") {
     CHECK_NOTHROW(notebook.erase(15,5,4,Direction::Horizontal,5));
 }
 
-//TEST_CASE("Exceptions Error") {
-    
-    // CHECK_THROWS(notebook.read(0,0,0, Direction::Horizontal,4));
-    // CHECK_THROWS(notebook.read(4,0,0, Direction::Vertical,8));
-    // CHECK_THROWS(notebook.read(0,1,6, Direction::Horizontal,4));
-    // CHECK_THROWS(notebook.read(4,0,0, Direction::Vertical,8));
-    // CHECK_THROWS(notebook.read(12,3,0, Direction::Horizontal,4));
-    // CHECK_THROWS(notebook.read(9,0,0, Direction::Vertical,8));
-    // CHECK_THROWS(notebook.read(7,0,0, Direction::Horizontal,4));
-    // CHECK_THROWS(notebook.read(9,8,5, Direction::Vertical,8));
-    // CHECK_THROWS(notebook.read(6,3,0, Direction::Horizontal,4));
-    // CHECK_THROWS(notebook.read(5,0,0, Direction::Vertical,8));
-    // CHECK_THROWS(notebook.read(3,0,6, Direction::Horizontal,4));
-    // CHECK_THROWS(notebook.read(2,4,0, Direction::Vertical,8));
 
-//}
